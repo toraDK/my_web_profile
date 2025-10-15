@@ -31,20 +31,20 @@
         <!-- Right Side Controls -->
         <div class="flex items-center gap-3">
           <!-- Theme Toggle -->
-          <button
+          <!-- <button
             id="theme-toggle"
             class="w-9 h-9 flex items-center justify-center rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition"
           >
-            <!-- Icon (dynamic) -->
-            <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+             Icon (dynamic)
+             <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
               viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M12 3v1m0 16v1m8.66-11.66l-.7.7M4.34 17.66l.7-.7M21 12h1M2 12H1m16.66 5.66l-.7-.7M4.34 6.34l.7.7M12 5a7 7 0 100 14 7 7 0 000-14z"/>
             </svg>
-          </button>
+          </button> -->
 
           <!-- Language Toggle -->
-          <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-700 rounded-md p-1">
+          <!-- <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-700 rounded-md p-1">
             <button
               id="lang-en"
               class="lang-btn px-2 py-1 rounded text-xs font-medium transition-colors"
@@ -57,33 +57,26 @@
             >
               🇮🇩 ID
             </button>
-          </div>
+          </div> -->
 
           <!-- Mobile Menu Button -->
-          <button
-            id="menu-btn"
-            class="md:hidden w-9 h-9 flex items-center justify-center rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-          >
-            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
-              fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
+          <button id="menu-btn" class="md:hidden w-9 h-9 flex items-center justify-center rounded-md hover:bg-gray-700 transition text-white">
+            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
       </div>
 
       <!-- Mobile Menu -->
-      <nav
-        id="mobile-menu"
-        class="hidden md:hidden flex-col border-t border-gray-200 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95"
+      <nav id="mobile-menu" class="hidden md:hidden flex-col border-t border-gray-800 bg-gray-900 p-4"
       >
-        <button class="mobile-nav-btn" data-target="#home">Home</button>
-        <button class="mobile-nav-btn" data-target="#about">About</button>
-        <button class="mobile-nav-btn" data-target="#projects">Projects</button>
-        <button class="mobile-nav-btn" data-target="#resume">Resume</button>
-        <button class="mobile-nav-btn" data-target="#certificate">Certificate</button>
-        <button class="mobile-nav-btn" data-target="#contact">Contact</button>
+        <button class="mobile-nav-btn text-left py-2" data-target="#home">Home</button>
+        <button class="mobile-nav-btn text-left py-2" data-target="#about">About</button>
+        <button class="mobile-nav-btn text-left py-2" data-target="#projects">Projects</button>
+        <button class="mobile-nav-btn text-left py-2" data-target="#resume">Resume</button>
+        <button class="mobile-nav-btn text-left py-2" data-target="#certificate">Certificate</button>
+        <button class="mobile-nav-btn text-left py-2" data-target="#contact">Contact</button>
       </nav>
     </div>
   </header>
