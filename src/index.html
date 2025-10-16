@@ -16,16 +16,16 @@
     <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
-        <a href="#home" class="text-xl font-bold">ToraDK</a>
+        <a data-target="#home" class="logo text-xl font-bold smoot cursor-pointer">ToraDK</a>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-6">
-          <button class="nav-btn" data-target="#home">Home</button>
-          <button class="nav-btn" data-target="#about">About</button>
-          <button class="nav-btn" data-target="#projects">Projects</button>
-          <button class="nav-btn" data-target="#resume">Resume</button>
-          <button class="nav-btn" data-target="#certificate">Certificate</button>
-          <button class="nav-btn" data-target="#contact">Contact</button>
+        <nav id="desktop-menu" class="hidden md:flex items-center gap-6">
+          <button class="nav-btn cursor-pointer hover:text-gray-400" data-target="#home">Home</button>
+          <button class="nav-btn cursor-pointer hover:text-gray-400" data-target="#about">About</button>
+          <button class="nav-btn cursor-pointer hover:text-gray-400" data-target="#projects">Projects</button>
+          <button class="nav-btn cursor-pointer hover:text-gray-400" data-target="#resume">Resume</button>
+          <button class="nav-btn cursor-pointer hover:text-gray-400" data-target="#certificate">Certificate</button>
+          <button class="nav-btn cursor-pointer hover:text-gray-400" data-target="#contact">Contact</button>
         </nav>
 
         <!-- Right Side Controls -->
@@ -71,12 +71,12 @@
       <!-- Mobile Menu -->
       <nav id="mobile-menu" class="hidden md:hidden flex-col border-t border-gray-800 bg-gray-900 p-4"
       >
-        <button class="mobile-nav-btn text-left py-2" data-target="#home">Home</button>
-        <button class="mobile-nav-btn text-left py-2" data-target="#about">About</button>
-        <button class="mobile-nav-btn text-left py-2" data-target="#projects">Projects</button>
-        <button class="mobile-nav-btn text-left py-2" data-target="#resume">Resume</button>
-        <button class="mobile-nav-btn text-left py-2" data-target="#certificate">Certificate</button>
-        <button class="mobile-nav-btn text-left py-2" data-target="#contact">Contact</button>
+        <button class="mobile-nav-btn text-left py-2 cursor-pointer hover:text-gray-400" data-target="#home">Home</button>
+        <button class="mobile-nav-btn text-left py-2 cursor-pointer hover:text-gray-400" data-target="#about">About</button>
+        <button class="mobile-nav-btn text-left py-2 cursor-pointer hover:text-gray-400" data-target="#projects">Projects</button>
+        <button class="mobile-nav-btn text-left py-2 cursor-pointer hover:text-gray-400" data-target="#resume">Resume</button>
+        <button class="mobile-nav-btn text-left py-2 cursor-pointer hover:text-gray-400" data-target="#certificate">Certificate</button>
+        <button class="mobile-nav-btn text-left py-2 cursor-pointer hover:text-gray-400" data-target="#contact">Contact</button>
       </nav>
     </div>
   </header>

@@ -1,15 +1,42 @@
 document.addEventListener("DOMContentLoaded", () => { 
+    const desktopMenu = document.getElementById("desktop-menu");
+    const navButtons = desktopMenu.querySelectorAll(".nav-btn");
+
+    desktopMenu.addEventListener("click", (e) => {
+        // Pastikan yang diklik adalah tombol
+        if (e.target.classList.contains("nav-btn")) {
+            // Hapus class aktif dari semua tombol
+            navButtons.forEach((btn) => {
+            btn.classList.remove("border-b-2", "border-white", "text-gray-400");
+            btn.classList.add("text-white"); // kembalikan warna semula
+            });
+
+            // Tambahkan class aktif ke tombol yang diklik
+            e.target.classList.add("border-b-2", "border-white", "text-gray-400");
+            e.target.classList.remove("text-white");
+        }
+    });
+
     // ========== NAVIGATION SCROLL ==========
     document.querySelectorAll(".nav-btn, .mobile-nav-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-        const target = document.querySelector(btn.dataset.target);
-        if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
-        }
+        btn.addEventListener("click", () => {
+            const target = document.querySelector(btn.dataset.target);
+            if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+            }
 
-        // Close mobile menu if open
-        document.getElementById("mobile-menu").classList.add("hidden");
+            // Close mobile menu if open
+            document.getElementById("mobile-menu").classList.add("hidden");
+        });
     });
+
+    document.querySelectorAll(".logo").forEach((logo) => {
+        logo.addEventListener("click", () => {
+            const target = document.querySelector("#home");
+            if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+            }
+        });
     });
 
     // ========== MOBILE MENU TOGGLE ==========

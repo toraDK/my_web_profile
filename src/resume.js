@@ -1,5 +1,3 @@
-console.log("✅ Resume script loaded");
-
 const skills = ["PHP", "PHP", "PHP", "PHP", "PHP", "PHP", "PHP", "PHP"];
 
 const experiences = [
