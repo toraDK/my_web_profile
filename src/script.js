@@ -215,4 +215,36 @@ document.addEventListener("DOMContentLoaded", () => {
             messageDiv.classList.add('hidden');
         }, 5000);
     }
+
+    // ====== Certificate Script ======
+    const certificateGrid = document.getElementById("certificate-grid");
+
+    const Certificates = ["Analisis_Data_Python", "Dasar_AI", "Dasar_JS", "Dasar_Web", "Front-End_Web", "Pemrograman_Python", "SQL", "Visualisasi_Data"];
+
+    // Bersihkan grid sebelum isi (jaga-jaga kalau sudah ada isi sebelumnya)
+    certificateGrid.innerHTML = "";
+
+    // Loop semua sertifikat dan tambahkan elemen
+    Certificates.forEach((fileName) => {
+    const card = document.createElement("div");
+    card.className =
+        "certificate-card aspect-square rounded-lg hover:shadow-lg transition-shadow relative cursor-pointer overflow-hidden";
+
+    // isi HTML tiap kartu
+    card.innerHTML = `
+        <div class="absolute inset-0 bg-gray-600 rounded-lg overflow-hidden">
+        <img src="../assets/certificates/${fileName}.webp" 
+            alt="${fileName}" 
+            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+        <button class="bg-white text-blue-600 px-4 py-2 rounded flex items-center gap-2 hover:bg-blue-100">
+            <i class="fas fa-external-link-alt"></i>
+            View Project
+        </button>
+        </div>
+    `;
+
+    certificateGrid.appendChild(card);
+    });
 });
