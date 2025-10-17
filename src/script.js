@@ -220,7 +220,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const certificateGrid = document.getElementById("certificate-grid");
 
     const Certificates = [
-        
         ["Analisis_Data_Python", "MRZMYK8KLZYQ"], 
         ["Dasar_AI", "GRX5O08J3P0M"], 
         ["Dasar_JS", "2VX3RY4GQZYQ"], 
@@ -228,7 +227,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ["Front-End_Web", 'RVZKR8W5NPD5'], 
         ["Pemrograman_Python", "NVP7Q3RR4ZR0"],
         ["SQL", "2VX3RLR84ZYQ"], 
-        ["Visualisasi_Data", "JMZV30NJJPN9"]
+        ["Visualisasi_Data", "JMZV30NJJPN9"],
+        ["AWS", "GRX5J4VWKX0M"],
+        ["ML_beginner", "NVP7J40JVXR0"]
     ];
 
     // Bersihkan grid sebelum isi (jaga-jaga kalau sudah ada isi sebelumnya)
@@ -240,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const [fileName, url] = certificate;
 
     const card = document.createElement("div");
-    card.className = "certificate-card aspect-square rounded-lg hover:shadow-lg transition-shadow relative cursor-pointer overflow-hidden";
+    card.className = "certificate-card w-full h-auto rounded-lg hover:shadow-lg transition-shadow relative cursor-pointer overflow-hidden";
 
     // isi HTML tiap kartu
     card.innerHTML = `
