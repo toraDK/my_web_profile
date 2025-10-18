@@ -24,23 +24,23 @@ const experiences = [
 
 const capabilities = [
   {
-    icon: "📚",
+    icon: "backend",
     title: "Back End",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis libero mi.",
+      "Able to develop and manage server-side applications using PHP and Laravel. Experienced in building CRUD functionality and creating RESTful APIs for data exchange.",
   },
   {
-    icon: "🎨",
-    title: "Video Editing",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis libero mi.",
-  },
-  {
-    icon: "💻",
+    icon: "api",
     title: "API",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis libero mi.",
+      "Capable of designing and implementing APIs to enable seamless communication between applications and systems.",
   },
+  {
+    icon: "frontend",
+    title: "Front End",
+    description:
+      "Skilled in creating responsive and user-friendly interfaces using HTML, CSS, Tailwind CSS, and vanilla JavaScript.",
+  }
 ];
 
 // Render desktop version
@@ -74,7 +74,7 @@ capabilities.forEach((c) => {
   const el = document.createElement("div");
   el.className = "bg-gray-100 dark:bg-gray-800 rounded-lg p-4 space-y-2";
   el.innerHTML = `
-    <div class="text-3xl">${c.icon}</div>
+    <div class="text-3xl"><img src="../assets/capabilities/${c.icon}.svg" alt=""></div>
     <h4 class="font-bold">${c.title}</h4>
     <p class="text-sm text-gray-600 dark:text-gray-300">${c.description}</p>
   `;
@@ -131,7 +131,7 @@ skills.forEach((s) => {
   el.className =
     "bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center gap-2";
   el.innerHTML = `
-    <div class="w-12 h-12 bg-indigo-500 text-white flex items-center justify-center rounded-full font-bold">PHP</div>
+  <div class="w-12 h-12  text-white flex items-center justify-center rounded-full font-bold"><img src="../assets/tech/${s}.svg" alt="${s}"></div>
     <span class="text-sm">${s}</span>
   `;
   contentSkill.appendChild(el);
