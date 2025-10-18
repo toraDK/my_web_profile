@@ -1,20 +1,42 @@
 document.addEventListener("DOMContentLoaded", () => { 
     const desktopMenu = document.getElementById("desktop-menu");
     const navButtons = desktopMenu.querySelectorAll(".nav-btn");
+    const navLinks = document.querySelectorAll(".nav-link");
+    const sections = document.querySelectorAll("section");
 
-    desktopMenu.addEventListener("click", (e) => {
-        // Pastikan yang diklik adalah tombol
-        if (e.target.classList.contains("nav-btn")) {
-            // Hapus class aktif dari semua tombol
-            navButtons.forEach((btn) => {
-            btn.classList.remove("border-b-2", "border-white", "text-gray-400");
-            btn.classList.add("text-white"); // kembalikan warna semula
-            });
+    // ========== EVENT KLIK UNTUK NAVIGATION ==========
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            const targetId = link.getAttribute("data-target");
+            document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+            
+            // Hilangkan status aktif di semua tombol
+            navLinks.forEach(l => l.classList.remove("border-b-2", "border-white", "text-gray-400"));
+            
+            // Tambahkan status aktif ke tombol yang diklik
+            link.classList.add("border-b-2", "border-white", "text-gray-400");
+        });
+    });
 
-            // Tambahkan class aktif ke tombol yang diklik
-            e.target.classList.add("border-b-2", "border-white", "text-gray-400");
-            e.target.classList.remove("text-white");
-        }
+    // ========== SCROLL UNTUK UPDATE ACTIVE NAV ==========
+    window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= sectionTop - 100) {
+            current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            const target = link.getAttribute("data-target");
+            link.classList.remove("border-b-2", "border-white", "text-gray-400");
+            if (target === `#${current}`) {
+            link.classList.add("border-b-2", "border-white", "text-gray-400");
+            }
+        });
     });
 
     // ========== NAVIGATION SCROLL ==========
