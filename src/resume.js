@@ -1,4 +1,4 @@
-const skills = ["PHP", "PHP", "PHP", "PHP", "PHP", "PHP", "PHP", "PHP"];
+const skills = ["bootstrap", "css3", "html5", "javascript", "python", "sass", "streamlit", "tailwindcss", "laravel", "jupyter", "php", "mysql", "git", "figma", "java"];
 
 const experiences = [
   {
@@ -52,7 +52,7 @@ skills.forEach((s) => {
   el.className =
     "bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center gap-2";
   el.innerHTML = `
-    <div class="w-12 h-12 bg-indigo-500 text-white flex items-center justify-center rounded-full font-bold">PHP</div>
+    <div class="w-12 h-12  text-white flex items-center justify-center rounded-full font-bold"><img src="../assets/tech/${s}.svg" alt="${s}"></div>
     <span class="text-sm">${s}</span>
   `;
   skillGrid.appendChild(el);
