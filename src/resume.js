@@ -2,24 +2,25 @@ const skills = ["bootstrap", "css3", "html5", "javascript", "python", "sass", "s
 
 const experiences = [
   {
-    title: "Engineering Student at SMK Negeri 1 Surabaya",
-    period: "July 2019 - May 2023",
+    title: "Software Engineering Student at SMK Negeri 1 Surabaya",
+    period: "January 2020 - May 2023",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis libero mi. Phasellus congue turpis tortor.",
+      "Learned about software engineering principles and how software is developed. Gained experience in programming languages such as HTML, CSS, PHP, SQL, basic JavaScript, basic Java, and C++, as well as frameworks like Bootstrap and Laravel. Created several projects as part of school assignments.",
   },
   {
-    title: "Front end developer & video editor intern",
+    title: "Front-End Developer & Video Editor Intern",
     period: "October 2021 - March 2022",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis libero mi. Phasellus congue turpis tortor.",
+      "Responsible for managing YouTube content and creating a company profile website. Built a responsive website using HTML, CSS, Bootstrap, and JavaScript. Edited YouTube videos using CapCut.",
   },
   {
-    title: "College student at the State Polytechnic of Malang",
+    title: "College Student at State Polytechnic of Malang",
     period: "October 2023 - March 2027",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis libero mi. Phasellus congue turpis tortor.",
+      "Learning the fundamentals of programming, object-oriented programming, web development, algorithms, data structures, artificial intelligence, and machine learning. Experienced with programming languages such as HTML, CSS, JavaScript, PHP, and MySQL, as well as frameworks like Laravel and Tailwind. Also currently studying mobile programming with Dart and exploring computer vision and image processing.",
   },
 ];
+
 
 const capabilities = [
   {
