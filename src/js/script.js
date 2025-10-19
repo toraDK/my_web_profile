@@ -103,17 +103,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     });
 
-    // ===== ANIMATE SECTION FADE IN ON SCROLL =====
-    const observer = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in");
-        }
-        });
-    },
-    { threshold: 0.2 }
-    );
+    // // ===== ANIMATE SECTION FADE IN ON SCROLL =====
+    // const observer = new IntersectionObserver(
+    // (entries) => {
+    //     entries.forEach((entry) => {
+    //     if (entry.isIntersecting) {
+    //         entry.target.classList.add("animate-fade-in");
+    //     }
+    //     });
+    // },
+    // { threshold: 0.2 }
+    // );
 
-    document.querySelectorAll("section").forEach((sec) => observer.observe(sec));
+    // document.querySelectorAll("section").forEach((sec) => observer.observe(sec));
 });

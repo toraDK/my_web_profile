@@ -7,6 +7,15 @@
   <link href="./style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <title>Tora DK Profile</title>
+  <style>
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors">
 
@@ -208,39 +217,35 @@
 
 
   <!-- PROJECTS -->
-  <section id="projects" class="py-20 px-4 bg-gray-100 dark:bg-gray-800 transition-colors">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 text-center mb-12">
-        My Work
-      </h2>
+  <section class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+      My Work
+    </h2>
 
-      <!-- Projects Grid -->
-      <div id="project-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-        <!-- Project cards akan dimasukkan lewat JavaScript -->
-      </div>
-
-      <!-- Navigation Arrows -->
-      <div class="flex justify-center items-center gap-4">
-        <button id="prev-project" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-
-        <div class="flex gap-2">
-          <div class="w-2 h-2 rounded-full bg-blue-600"></div>
-          <div class="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-600"></div>
-          <div class="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-600"></div>
-        </div>
-
-        <button id="next-project" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
+    <!-- SCROLL CONTAINER -->
+    <div
+      id="project-scroll"
+      class="overflow-x-auto scroll-smooth snap-x snap-mandatory flex gap-6 pb-4 hide-scrollbar"
+    >
+      <div id="project-flex" class="flex gap-6"></div>
     </div>
-  </section>
+
+    <!-- NAVIGATION -->
+    <div class="flex justify-center items-center gap-4 mt-6">
+      <button id="prev-btn" class="w-10 h-10 flex items-center justify-center text-gray-700 dark:text-gray-200 hover:text-blue-600">
+        &#10094;
+      </button>
+      <!-- <div id="dots" class="flex gap-2"></div> -->
+      <button id="next-btn" class="w-10 h-10 flex items-center justify-center text-gray-700 dark:text-gray-200 hover:text-blue-600">
+        &#10095;
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
 
 
   <!-- RESUME -->
