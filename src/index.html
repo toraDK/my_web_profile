@@ -20,9 +20,7 @@
 <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors">
 
   <!-- NAVBAR -->
-  <header
-    class="fixed top-0 left-0 right-0 z-50 bg-gray-50/90 dark:bg-gray-800/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700"
-  >
+  <header class="fixed top-0 left-0 right-0 z-50 bg-gray-50/90 dark:bg-gray-800/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
     <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
@@ -186,7 +184,7 @@
             class="w-64 h-64 md:w-80 md:h-80 bg-gray-200 dark:bg-gray-700 rounded-lg"
           >
             <!-- Tempatkan foto profil di sini -->
-            <!-- Contoh: <img src="assets/profile.jpg" alt="Profile" class="w-full h-full object-cover rounded-lg" /> -->
+            <img src="../assets/profile/photo.jpeg" alt="Profile" class="w-full h-full object-cover rounded-lg" />
           </div>
         </div>
 
@@ -195,20 +193,8 @@
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">
             About Me
           </h2>
-          <div
-            class="space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed"
-          >
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-              libero mi. Phasellus congue turpis tortor, eu fermentum tellus
-              rhoncus non. Maecenas luctus mauris eget diam facilisis consequat.
-              Non tortor magna, interdum non nulla in, interdum congue mauris.
-            </p>
-            <p>
-              Phasellus et imperdiet risus, ac luctus nisl. Phasellus lorem nisl,
-              pulvinar quis luctus non, ac fermentum tellus rhoncus non. Maecenas
-              luctus mauris eget diam facilisis consequat.
-            </p>
+          <div id="about-content" class="space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed">
+            <!-- Konten tentang saya akan dimuat di sini melalui JavaScript -->
           </div>
         </div>
       </div>
@@ -217,7 +203,7 @@
 
 
   <!-- PROJECTS -->
-  <section class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+  <section id="projects" class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
       My Work
@@ -233,11 +219,11 @@
 
     <!-- NAVIGATION -->
     <div class="flex justify-center items-center gap-4 mt-6">
-      <button id="prev-btn" class="w-10 h-10 flex items-center justify-center text-gray-700 dark:text-gray-200 hover:text-blue-600">
+      <button id="prev-btn" class="w-10 h-10 flex items-center justify-center text-gray-700 dark:text-gray-200 hover:text-blue-600 cursor-pointer">
         &#10094;
       </button>
       <!-- <div id="dots" class="flex gap-2"></div> -->
-      <button id="next-btn" class="w-10 h-10 flex items-center justify-center text-gray-700 dark:text-gray-200 hover:text-blue-600">
+      <button id="next-btn" class="w-10 h-10 flex items-center justify-center text-gray-700 dark:text-gray-200 hover:text-blue-600 cursor-pointer">
         &#10095;
       </button>
     </div>
@@ -389,6 +375,7 @@
   </footer>
 
   <script src="./js/script.js"></script>
+  <script src="./js/about.js"></script>
   <script src="./js/project.js"></script>
   <script src="./js/resume.js"></script>
   <script src="./js/certificate.js"></script>
