@@ -1,34 +1,46 @@
 document.addEventListener("DOMContentLoaded", () => {
 const projects = [
     {
-        title: "Nama Projek 1",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        software: ["Software 1", "Software 2"],
+        img: "isfor",
+        title: "Is For website",
+        description: "This website is a Problem-Based Learning (PBL) project developed during the third semester. It serves as a platform to accommodate research conducted by lecturers and students at the State Polytechnic of Malang. My role in this project was to develop website features using PHP Native, optimize database queries, design database tables, and implement CRUD functionalities.",
+        software: ["html5", "microsoftsqlserver", "tailwindcss", "javascript", "php"],
+        link: ["https://github.com/KhalidFinny/isFor-website"],
     },
     {
-        title: "Nama Projek 2",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        software: ["Software 1", "Software 2"],
+        img: "rentBike",
+        title: "rent bike",
+        description: `Rent-bike-data" is a dashboard that displays bike rental data from January 1, 2011, to December 31, 2012. This project was completed as part of the Dicoding bootcamp for "Belajar Analisis Data dengan Python" class.`,
+        software: ["python", "jupyter", "streamlit"],
+        link: ["https://rentbike.streamlit.app/"]
     },
     {
-        title: "Nama Projek 3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        software: ["Software 1", "Software 2"],
+        img: "todo",
+        title: "todo list app",
+        description: `This is a “to-do list” website, designed to keep track of both completed and incomplete tasks. This project was developed as part of the Dicoding bootcamp for “Belajar Membuat Front-End web untuk pemula” class. This project was built using : `,
+        software: ["html5", "css3", "javascript"],
+        link: ["https://toradk.github.io/Todo-Apps/src/index.html"],
     },
     {
-        title: "Nama Projek 4",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        software: ["Software 3", "Software 4"],
+        img: "bookshelf",
+        title: "BookShelf App",
+        description: `This is the "Bookshelf Apps" website, a platform designed to keep track of books you've read and those you haven't. This project was developed as part of the completion of the Dicoding bootcamp for "Belajar Membuat Front-End web untuk pemula" class. This project was built using : html5, css3, javascript`,
+        software: ["html5", "css3", "javascript"],
+        link: ["https://toradk.github.io/Bookshelf-App/"],
     },
     {
-        title: "Nama Projek 5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        software: ["Software 3", "Software 4"],
+        img: "laundry",
+        title: "Laundry Website",
+        description: "This laundry website is a personal project where I learned to structure the layout using vanilla CSS based on an existing design.",
+        software: ["html5", "css3"],
+        link: ["https://toradk.github.io/Laundry-Website/"],
     },
     {
-        title: "Nama Projek 6",
+        img: "discusionForum",
+        title: "Discusion Forum Website",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        software: ["Software 3", "Software 4"],
+        software: ["html5", "css3"],
+        link: ["https://toradk.github.io/projek-dicoding/"]
     },
 ];
 
@@ -44,40 +56,32 @@ projects.forEach((p) => {
     card.className = "snap-start flex-shrink-0 bg-white dark:bg-gray-800 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 w-80";
 
     card.innerHTML = `
-        <div class="w-full h-48 bg-gray-200 dark:bg-gray-700"></div>
-        <div class="p-6 space-y-4">
+    <div class="w-full h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden">
+        <img src="../assets/project/${p.img}.png" alt="${p.title}" class="w-full h-full object-contain">
+    </div>
+    <div class="p-6 space-y-4">
         <h3 class="text-xl font-bold text-gray-900 dark:text-white">${p.title}</h3>
         <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">${p.description}</p>
         <div>
-            <p class="text-sm font-semibold text-gray-800 dark:text-white mb-2">Software:</p>
-            <div class="flex flex-wrap gap-2">${p.software.map(s => `<span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-xs rounded-full">${s}</span>`).join("")}</div>
+        <p class="text-sm font-semibold text-gray-800 dark:text-white mb-2">Software:</p>
+        <div class="flex flex-wrap gap-2">
+            ${p.software.map(s => `
+            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-xs rounded-full">
+                <img src="../assets/tech/${s}.svg" alt="${s}" class="w-5 h-5">
+            </span>
+            `).join("")}
         </div>
-        <button class="w-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-sm font-medium py-2 rounded transition"> Link Project </button>
-        </div>`;
+        </div>
+        <a href="${p.link}" target="_blank" rel="noopener noreferrer" class="block mt-4">
+        <button class="w-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-sm font-medium py-2 rounded transition cursor-pointer">Link Project</button>
+        </a>
+    </div>
+    `;
     projectFlex.appendChild(card);
 });
 
 const projectCards = document.querySelectorAll("#project-flex > div");
 let currentIndex = 0;
-
-//   // ===== RENDER DOTS =====
-//   projects.forEach((_, i) => {
-//     const dot = document.createElement("button");
-//     dot.className = "w-2.5 h-2.5 rounded-full bg-gray-400 dark:bg-gray-600 transition-all duration-300";
-//     if (i === 0) dot.classList.add("bg-blue-600", "scale-125");
-//     dot.addEventListener("click", () => scrollToCard(i));
-//     dotsContainer.appendChild(dot);
-//   });
-
-//   const dots = dotsContainer.querySelectorAll("button");
-
-//   function updateDots(index) {
-//     dots.forEach((dot, i) => {
-//       dot.classList.toggle("bg-blue-600", i === index);
-//       dot.classList.toggle("scale-125", i === index);
-//       dot.classList.toggle("bg-gray-400", i !== index);
-//     });
-//   }
 
 function scrollToCard(index) {
     const card = projectCards[index];
@@ -98,15 +102,4 @@ prevBtn.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + projectCards.length) % projectCards.length;
     scrollToCard(currentIndex);
 });
-
-//   // Update dot saat user scroll manual
-//   scrollContainer.addEventListener("scroll", () => {
-//     const scrollLeft = scrollContainer.scrollLeft;
-//     const cardWidth = projectCards[0].offsetWidth + 24; // +gap (6 = 1.5rem = 24px)
-//     const index = Math.round(scrollLeft / cardWidth);
-//     if (index !== currentIndex) {
-//       currentIndex = index;
-//       updateDots(index);
-//     }
-//   });
 });
