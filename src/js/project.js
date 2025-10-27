@@ -8,17 +8,24 @@ const projects = [
         link: ["https://github.com/KhalidFinny/isFor-website"],
     },
     {
-        img: "rentBike",
-        title: "rent bike",
-        description: `Rent-bike-data" is a dashboard that displays bike rental data from January 1, 2011, to December 31, 2012. This project was completed as part of the Dicoding bootcamp for "Belajar Analisis Data dengan Python" class.`,
-        software: ["python", "jupyter", "streamlit"],
-        link: ["https://rentbike.streamlit.app/"]
-    },
-    {
         img: "simple-notes",
         title: "notes app",
         description: `This is a simple notes application that allows users to create, read, update, and delete notes. This project was built using : `,
         software: ["html5", "css3", "javascript"],
+        link: ["https://github.com/toraDK/simple-notes"]
+    },
+    {
+        img: "simple-chatbot",
+        title: "simple chat bot",
+        description: `This project is an AI-based chatbot that still uses a REST API without a UI. The chatbot uses the Gemini API to process user queries and provide relevant answers. Users can submit input via HTTP requests, and the API will automatically respond based on the context of the question.`,
+        software: ["nodejs"],
+        link: ["https://github.com/toraDK/chatbot"]
+    },
+    {
+        img: "rentBike",
+        title: "rent bike",
+        description: `Rent-bike-data" is a dashboard that displays bike rental data from January 1, 2011, to December 31, 2012. This project was completed as part of the Dicoding bootcamp for "Belajar Analisis Data dengan Python" class.`,
+        software: ["python", "jupyter", "streamlit"],
         link: ["https://rentbike.streamlit.app/"]
     },
     {
