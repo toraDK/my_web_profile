@@ -15,6 +15,13 @@ const projects = [
         link: ["https://rentbike.streamlit.app/"]
     },
     {
+        img: "simple-notes",
+        title: "notes app",
+        description: `This is a simple notes application that allows users to create, read, update, and delete notes. This project was built using : `,
+        software: ["html", "css", "javascript"],
+        link: ["https://rentbike.streamlit.app/"]
+    },
+    {
         img: "todo",
         title: "todo list app",
         description: `This is a “to-do list” website, designed to keep track of both completed and incomplete tasks. This project was developed as part of the Dicoding bootcamp for “Belajar Membuat Front-End web untuk pemula” class. This project was built using : `,
@@ -57,7 +64,7 @@ projects.forEach((p) => {
 
     card.innerHTML = `
     <div class="w-full h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden">
-        <img src="../assets/project/${p.img}.png" alt="${p.title}" class="w-full h-full object-contain">
+        <img src="../assets/project/${p.img}.webp" alt="${p.title}" class="w-full h-full object-contain">
     </div>
     <div class="p-6 space-y-4">
         <h3 class="text-xl font-bold text-gray-900 dark:text-white">${p.title}</h3>
