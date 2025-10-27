@@ -38,7 +38,7 @@ const projects = [
     {
         img: "discusionForum",
         title: "Discusion Forum Website",
-        description: "This Forum website is a project to completed as part of the Dicoding bootcamp for "Belajar Dasar Pemograman Web" class.",
+        description: `This Forum website is a project to completed as part of the Dicoding bootcamp for "Belajar Dasar Pemograman Web" class.`,
         software: ["html5", "css3"],
         link: ["https://toradk.github.io/projek-dicoding/"]
     },
