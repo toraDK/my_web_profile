@@ -33,12 +33,12 @@ const projects = [
         title: "Laundry Website",
         description: "This laundry website is a personal project where I learned to structure the layout using vanilla CSS based on an existing design.",
         software: ["html5", "css3"],
-        link: ["https://toradk.github.io/Laundry-Website/"],
+        link: ["https://toradk.github.io/laundry-website/"],
     },
     {
         img: "discusionForum",
         title: "Discusion Forum Website",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "This Forum website is a project to completed as part of the Dicoding bootcamp for "Belajar Dasar Pemograman Web" class.",
         software: ["html5", "css3"],
         link: ["https://toradk.github.io/projek-dicoding/"]
     },
