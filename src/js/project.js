@@ -18,7 +18,7 @@ const projects = [
         img: "simple-notes",
         title: "notes app",
         description: `This is a simple notes application that allows users to create, read, update, and delete notes. This project was built using : `,
-        software: ["html", "css", "javascript"],
+        software: ["html5", "css3", "javascript"],
         link: ["https://rentbike.streamlit.app/"]
     },
     {
