@@ -11,7 +11,7 @@ const projects = [
         img: "simple-notes",
         title: "notes app",
         description: `This is a simple notes application that allows users to create, read, update, and delete notes. This project was built using : `,
-        software: ["html5", "css3", "javascript"],
+        software: ["html5", "css3", "javascript", "nodejs"],
         link: ["https://github.com/toraDK/simple-notes"]
     },
     {
