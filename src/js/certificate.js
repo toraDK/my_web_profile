@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ["SQL", "2VX3RLR84ZYQ"], 
         ["Visualisasi_Data", "JMZV30NJJPN9"],
         ["AWS", "GRX5J4VWKX0M"],
-        ["ML_beginner", "NVP7J40JVXR0"]
+        ["ML_beginner", "NVP7J40JVXR0"],
+        ["Backend_JS", "JLX15JD9NZ72"]
     ];
 
     // Bersihkan grid sebelum isi (jaga-jaga kalau sudah ada isi sebelumnya)
